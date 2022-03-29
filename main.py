@@ -13,3 +13,10 @@ def on_forever():
     elif input.button_is_pressed(Button.B):
         images.icon_image(IconNames.SAD).show_image(0)
 basic.forever(on_forever)
+
+def on_forever2():
+    if input.button_is_pressed(Button.A):
+        led.plot(0, 0)
+    elif input.button_is_pressed(Button.A):
+        led.unplot(0, 0)
+basic.forever(on_forever2)

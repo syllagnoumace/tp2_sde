@@ -13,3 +13,10 @@ basic.forever(function () {
         images.iconImage(IconNames.Sad).showImage(0)
     }
 })
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.A)) {
+        led.plot(0, 0)
+    } else if (input.buttonIsPressed(Button.A)) {
+        led.unplot(0, 0)
+    }
+})
